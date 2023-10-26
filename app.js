@@ -9,7 +9,7 @@ const produtos = [
   {id: 4, nome: "super girl", preco:"8.599,00", descricao:"boneco de ação da heroina alienigena, Super girl", imagem:"imagens_projeto/supergirl.webp"},
   {id: 5, nome: "super man", preco:"5.999,00", descricao:"boneco de ação do heroi alienigena, Super Man", imagem:"imagens_projeto/superMan.jpg"},
   {id: 6, nome: "arrow", preco:"2.999,00", descricao:"boneco de ação do heroi, Arqueior verde, Arrow", imagem:"imagens_projeto/arrow.jpg"},
-  {id: 7, nome: "power ranger", preco:"1.999,00", descricao:"bonecos de ação do grupo de herois, Power Rangers", imagem:"imagens_projeto/rangers.jpg"},
+  {id: 7, nome: "power ranger", preco:"1.999,00", descricao:"bonecos de ação do grupo de herois, Power Rangers", imagem:"imagens_projeto/rangerPreto.webp"},
   {id: 8, nome: "homem aranha", preco:"5,999,00", descricao:"boneco de ação do heroi, amigo da vizinhança, Homem Aranha", imagem:"imagens_projeto/aranha.webp"},
   {id: 9, nome: "loki", preco:"2.999,00", descricao:"boneco de ação do Anti heroi, deus da mentira, Loki", imagem:"imagens_projeto/loki.webp"},
   {id: 10, nome: "feiticeira escarlate", preco:"5.999,00", descricao:"boneco de ação da feiticeira mais poderosa do multiverso, Feiticeira Escarlate", imagem:"imagens_projeto/feiticeira.webp"},

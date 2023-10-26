@@ -8,8 +8,14 @@ justify-content: center;
 
 }
 
+
+
+.produtos{
+    display: flex;
+    justify-content: space-around;
+}
+
 div{
-    
     text-align: center;
     align-items: center;
 }

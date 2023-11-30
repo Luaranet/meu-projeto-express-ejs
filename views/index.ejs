@@ -10,9 +10,30 @@
     <h1>picolo</h1>
     <% } %> -->
 
+    <h1>Star Store</h1>
+
+    <% for (let produto of produtos){%>
+      <div class="card">
+        <img src="/<%= produto.imagem %>" class="card-img-top" alt="..." height="450" width="400">
+        <div class="card-body">
+          <h3 class="card-title"> <%= produto.nome %></h3>
+          <p class="card-text text-break"><%= produto.descricao %></p>
+          <p class="fw-bold fs-5">R$<%= produto.preco %></p>
+         <a href="/produtos/<%= produto.id %>">conheça o produto</a>
+        </div>
+     </div> <% } %>
+
+
+
+
+
+
+
+
+
 
   <!--primeira fileria de produtos-->
-  <div class="p-3 mb-2 bg-dark text-white">
+ <!-- <div class="p-3 mb-2 bg-dark text-white">
     <div class="container text-center">
       <h1>Star Store</h1>
       <br>
@@ -82,9 +103,9 @@
             </button>
             </div>
           </div>
-
+-->
   <!--segunda fileria de produtos-->
-  <br>
+<!--  <br>
   <br>
       <div class="produtos">
         <div class="col">
@@ -153,6 +174,6 @@
           </div>
    
         </div>
-      
+      -->
 </body>
 </html>

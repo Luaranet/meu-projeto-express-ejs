@@ -1,179 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Projeto Express e EJS</title>
   <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
+
 <body>
-  
-  <!-- <% for (const produto of produtos) { %>
-    <h1>picolo</h1>
-    <% } %> -->
 
-    <h1>Star Store</h1>
+  <h1>Star Store</h1>
 
-    <% for (let produto of produtos){%>
-      <div class="card">
-        <img src="/<%= produto.imagem %>" class="card-img-top" alt="..." height="450" width="400">
-        <div class="card-body">
-          <h3 class="card-title"> <%= produto.nome %></h3>
-          <p class="card-text text-break"><%= produto.descricao %></p>
-          <p class="fw-bold fs-5">R$<%= produto.preco %></p>
-         <a href="/produtos/<%= produto.id %>">conheça o produto</a>
-        </div>
-     </div> <% } %>
+  <div class="produtos">
+    <% for (let produto of produtos) { %>
+    <div class="card">
+      <img src="/<%= produto.imagem %>" class="card-img-top" alt="Product Image" height="450" width="400">
+      <div class="card-body">
+        <h3 class="card-title"><%= produto.nome %></h3>
+        <p class="card-text text-break"><%= produto.descricao %></p>
+        <p class="fw-bold fs-5">R$<%= produto.preco %></p>
+        <a href="/produtos/<%= produto.id %>">Conheça o produto</a>
+      </div>
+    </div>
+    <% } %>
+  </div>
 
-
-
-
-
-
-
-
-
-
-  <!--primeira fileria de produtos-->
- <!-- <div class="p-3 mb-2 bg-dark text-white">
-    <div class="container text-center">
-      <h1>Star Store</h1>
-      <br>
-   <div class="col-md-4 mb-4">
-      <div class="produtos">        
-         <div class="col">
-          <img src="https://ironstudios.vteximg.com.br/arquivos/ids/332714-1000-1000/229066_0.jpg?v=638167792429100000" class="rounded-0" alt="..." height="450" width="400">
-          <br>
-          <a href="produtos">Figura Iron Man Diecast Origins - Marvel</a>
-          <br>
-          R$4.499,00
-          <br>
-          <br>
-    </button>
-          <br>
-        </div>
-        <br>
-        <br>
-
-        <div class="col">
-          <img src="https://ironstudios.vteximg.com.br/arquivos/ids/337819-1000-1000/267006_0.jpg?v=638253055725170000" class="rounded-0" alt="..." height="450" width="400">
-          <br>
-          <a href="produtos">Estátua The Flash - DC Comics - Tweeterhead</a>
-        <br>
-          R$4.999,0
-          <br>
-        <br>
-    </button>
-          <br>
-        </div>
-        <br>
-        <br>
-        <div class="col">
-          <img src="https://ironstudios.vteximg.com.br/arquivos/ids/335279-1000-1000/253000_0.jpg?v=638203648123400000" class="rounded-0" alt="..." height="450" width="400">
-          <br>
-          <a href="produtos">Estátua Wonder Woman Museum Line - DC Comics - Queen Studios</a>
-          <br>
-          R$4.999,00
-          <br>
-          <br>
-        </button>
-      <br>
-          </div>
-          <br>
-          <br>
-          <div class="col">
-            <img src="https://ironstudios.vtexassets.com/arquivos/ids/320828-1536-2048?v=637955317758400000&width=1536&height=2048&aspect=true" class="rounded-0" alt="..." height="450" width="400">
-          <br>
-            <a href="produtos">Estátua Scarlet Witch Deluxe - WandaVision - Iron Studios</a>
-          <br>
-          R$4.999,00
-          <br>
-            <br>
-          </button>
-          <br>
-          </div>
-              <br>
-        <br>
-            <div class="col">
-        <img src="https://ironstudios.vtexassets.com/arquivos/ids/311675-1536-2048?v=637954899954700000&width=1536&height=2048&aspect=true" class="rounded-0" alt="..." height="450" width="400">
-      <br>
-      <a href="produtos">Estátua Loki President Variant - Loki - Iron Studios</a>
-      <br>
-        R$4.999,00
-      <br>
-        <br>
-            </button>
-            </div>
-          </div>
--->
-  <!--segunda fileria de produtos-->
-<!--  <br>
-  <br>
-      <div class="produtos">
-        <div class="col">
-         
-          <img src="https://ironstudios.vtexassets.com/arquivos/ids/335987-1536-2048?v=638225407398500000&width=1536&height=2048&aspect=true" class="rounded-0" alt="..." height="500" width="350">
-          <br>
-          <a href="produtos">Estátua Iron Spider Deluxe Edition - Avengers - Queen Studios</a>
-          <br>
-          R$4.499,00
-          <br>
-          <br>
-    </button>
-          <br>
-        </div>
-        <br>
-        <br>
-        <div class="col">
-          <img src="https://ironstudios.vtexassets.com/arquivos/ids/312895-1536-2048?v=637954961778700000&width=1536&height=2048&aspect=true" class="rounded-0" alt="..." height="450" width="400">
-          <br>
-          <a href="produtos">Estátua Black Ranger - Mighty Morphin Power Rangers - Iron Studios</a>
-        <br>
-          R$4.999,0
-          <br>
-        <br>
-    </button>
-          <br>
-        </div>
-        <br>
-        <br>
-        <div class="col">
-          <img src="https://ironstudios.vtexassets.com/arquivos/ids/234000-1536-2048?v=637618802682070000&width=1536&height=2048&aspect=true" class="rounded-0" alt="..." height="450" width="400">
-          <br>
-          <a href="produtos">Estátua Green Arrow - DC Comics - Iron Studios</a>
-          <br>
-          R$4.999,00
-          <br>
-          <br>
-        </button>
-      <br>
-          </div>
-          <br>
-          <br>
-          <div class="col">
-            <img src="https://ironstudios.vtexassets.com/arquivos/ids/338200-1536-2048?v=638264161481700000&width=1536&height=2048&aspect=true" class="rounded-0" alt="..." height="450" width="400">
-          <br>
-            <a href="produtos">Estátua Supergirl - DC Comics - XM Studios</a>
-          <br>
-          R$4.999,00
-          <br>
-            <br>
-          </button>
-          <br>
-          </div>
-              <br>
-        <br>
-            <div class="col">
-        <img src="https://ironstudios.vtexassets.com/arquivos/ids/311452-1536-2048?v=637954888039800000&width=1536&height=2048&aspect=true" class="rounded-0" alt="..." height="450" width="400">
-      <br>
-      <a href="produtos">Estátua Superman Prime - DC Comic - Iron Studios</a>
-      <br>
-        R$4.999,00
-      <br>
-        <br>
-            </button>
-            </div>
-          </div>
-   
-        </div>
-      -->
 </body>
+
 </html>
